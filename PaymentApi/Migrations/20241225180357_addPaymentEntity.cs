@@ -11,7 +11,7 @@ namespace PaymentApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "paymentDetails",
+                name: "PaymentDetails",
                 columns: table => new
                 {
                     PaymentDetailId = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace PaymentApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_paymentDetails", x => x.PaymentDetailId);
+                    table.PrimaryKey("PK_PaymentDetails", x => x.PaymentDetailId);
                 });
         }
 
@@ -31,7 +31,7 @@ namespace PaymentApi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "paymentDetails");
+                name: "PaymentDetails");
         }
     }
 }

@@ -11,7 +11,7 @@ using PaymentApi.Data;
 namespace PaymentApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241225175136_addPaymentEntity")]
+    [Migration("20241225180357_addPaymentEntity")]
     partial class addPaymentEntity
     {
         /// <inheritdoc />
@@ -50,7 +50,7 @@ namespace PaymentApi.Migrations
 
                     b.HasKey("PaymentDetailId");
 
-                    b.ToTable("paymentDetails");
+                    b.ToTable("PaymentDetails");
                 });
 #pragma warning restore 612, 618
         }

@@ -47,7 +47,7 @@ namespace PaymentApi.Migrations
 
                     b.HasKey("PaymentDetailId");
 
-                    b.ToTable("paymentDetails");
+                    b.ToTable("PaymentDetails");
                 });
 #pragma warning restore 612, 618
         }

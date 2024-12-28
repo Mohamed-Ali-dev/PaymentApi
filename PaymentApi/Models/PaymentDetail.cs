@@ -1,5 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.OpenApi;
+using Microsoft.EntityFrameworkCore;
+using PaymentApi.Data;
 
 namespace PaymentApi.Models
 {
@@ -17,4 +21,5 @@ namespace PaymentApi.Models
         [Column(TypeName = "nvarchar(5)")] 
         public string SecurityCode { get; set; } = string.Empty;
     }
+
 }
